@@ -57,10 +57,10 @@ jobs:
     - name: Build container image
       uses: docker/build-push-action@v2
       with:
-        username: ${{github.actor}}
-        password: ${{secrets.GITHUB_TOKEN}}
+        username: ${{secrets.DOCKER_HUB_USERNAME}}
+        password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
         registry: docker.pkg.github.com
-        repository: michaeljohn007/DevOps-P8/tic-tac-toe
+        repository: michaeljohn007/demo/tic-tac-toe
         tag_with_sha: true
     
     

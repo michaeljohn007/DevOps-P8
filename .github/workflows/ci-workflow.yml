@@ -60,7 +60,7 @@ jobs:
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
         registry: docker.pkg.github.com
-        repository: michaeljohn007/DevOps-P8/tic-tac-toe2
+        repository: michaeljohn007/devops-p8/tic-tac-toe2
         tag_with_sha: true
     
     

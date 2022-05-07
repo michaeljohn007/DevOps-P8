@@ -58,7 +58,7 @@ jobs:
       uses: docker/build-push-action@v1
       with:
         username: ${{github.actor}}
-        password: ${{secrets.GITHUB_TOKEN}}
+        password: ${{secrets.PAT_TOKEN}}
         registry: docker.pkg.github.com
         repository: michaeljohn007/devops-p8/tic-tac-toe2
         tag_with_sha: true
